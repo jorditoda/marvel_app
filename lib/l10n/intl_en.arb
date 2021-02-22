@@ -1,0 +1,18 @@
+{
+  "support": "Support",
+  "@support": {
+    "description": "support"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "settings"
+  },
+  "creators": "Creators",
+  "@creators": {
+    "description": "creators"
+  },
+  "creators_not_found": "No creators found",
+  "@creators_not_found": {
+    "description": "creators_not_found"
+  }
+}
