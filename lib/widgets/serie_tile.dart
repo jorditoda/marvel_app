@@ -34,7 +34,10 @@ class _SeriesTileState extends State<SeriesTile> {
             ),
           ),
         ),
-        Text(series.title)
+        Text(
+          series.title,
+          overflow: TextOverflow.ellipsis,
+        )
       ],
     );
   }
