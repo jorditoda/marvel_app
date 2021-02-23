@@ -18,27 +18,35 @@ class _SeriesTileState extends State<SeriesTile> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          height: 140,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(12)),
-            image: DecorationImage(
-              image: NetworkImage(
-                series.thumbnail.path +
-                    '/standard_amazing.' +
-                    series.thumbnail.extension,
+    return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12.0),
+      ),
+      child: Column(
+        children: [
+          Container(
+            height: 140,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(12)),
+              image: DecorationImage(
+                image: NetworkImage(
+                  series.thumbnail.path +
+                      '/standard_amazing.' +
+                      series.thumbnail.extension,
+                ),
+                fit: BoxFit.cover,
               ),
-              fit: BoxFit.cover,
             ),
           ),
-        ),
-        Text(
-          series.title,
-          overflow: TextOverflow.ellipsis,
-        )
-      ],
+          SizedBox(
+            height: 8,
+          ),
+          Text(
+            series.title,
+            overflow: TextOverflow.ellipsis,
+          )
+        ],
+      ),
     );
   }
 }

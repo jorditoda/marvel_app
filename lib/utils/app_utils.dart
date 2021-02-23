@@ -7,12 +7,12 @@ Future<Object> viewSeriesDetail(BuildContext context, {int serieId}) {
   return _viewPage(context, SeriesDetailsPage(seriesId: serieId));
 }
 
-Future<Object> viewSettingsPage(BuildContext context) {
-  return _viewPage(context, SettingsPage());
+void viewSettingsPage(BuildContext context) {
+  _viewPage(context, SettingsPage());
 }
 
-Future<Object> viewSupportPage(BuildContext context) {
-  return _viewPage(context, SupportPage());
+void viewSupportPage(BuildContext context) {
+   _viewPage(context, SupportPage());
 }
 
 Future<Object> _viewPage(BuildContext context, Widget page,
